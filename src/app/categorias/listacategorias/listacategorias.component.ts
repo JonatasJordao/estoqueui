@@ -1,3 +1,4 @@
+import { Categoria } from './../../core/model';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,6 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./listacategorias.component.scss']
 })
 export class ListacategoriasComponent implements OnInit {
+
+  categorias: Categoria[] = [
+    {id: 1, nomecategoria: 'Carne'},
+
+  ];
+
+  displayedColumns = ['id', 'nomecategoria'];
 
   constructor() { }
 
